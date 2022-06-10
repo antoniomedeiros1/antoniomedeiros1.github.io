@@ -1,5 +1,13 @@
+<script setup>
+
+
+
+</script>
+
 <template>
-  <div class="px-2">
-    <button class="m-2 px-4 py-1 bg-purple-400 text-white rounded-lg" >Hello</button>
+  <div class=" md:px-48 2xl:px-72 min-h-screen px-10 bg-orange-50">
+    <Navbar />
+    <Info />
   </div>
+
 </template>

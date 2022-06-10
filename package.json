@@ -7,7 +7,13 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@nuxtjs/google-fonts": "^2.0.0",
     "@nuxtjs/tailwindcss": "^5.1.2",
     "nuxt": "3.0.0-rc.3"
+  },
+  "dependencies": {
+    "@nuxt-hero-icons/outline": "^1.0.1",
+    "@nuxt-hero-icons/solid": "^1.0.1",
+    "devicon": "^2.15.1"
   }
 }
