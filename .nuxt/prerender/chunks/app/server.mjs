@@ -1,3 +1,20 @@
+import { v as vue_cjs_prod, r as require$$0, s as serverRenderer } from '../renderer.mjs';
+import { hasProtocol, parseQuery, isEqual, parseURL, withBase, withQuery } from 'file:///home/antonio/projects/portfolio/node_modules/ufo/dist/index.mjs';
+import { u as useRuntimeConfig$1 } from '../nitro/nitro-prerenderer.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/h3/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/unenv/runtime/mock/proxy.mjs';
+import 'stream';
+import 'file:///home/antonio/projects/portfolio/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/ohmyfetch/dist/node.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/destr/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/radix3/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/hookable/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/scule/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/ohash/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/unstorage/dist/index.mjs';
+import 'file:///home/antonio/projects/portfolio/node_modules/unstorage/dist/drivers/fs.mjs';
+
 var __defProp = Object.defineProperty;
 var __defProps = Object.defineProperties;
 var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
@@ -17,10 +34,6 @@ var __spreadValues = (a, b) => {
   return a;
 };
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
-import require$$0, { getCurrentInstance, reactive, toRef, isRef, defineComponent, computed, h, resolveComponent, watchEffect, ref, markRaw, useSSRContext, mergeProps, withCtx, createTextVNode, toDisplayString as toDisplayString$1, unref, onErrorCaptured, createApp } from "vue";
-import { withBase, withQuery, hasProtocol, parseQuery, isEqual, parseURL } from "ufo";
-import { useRuntimeConfig as useRuntimeConfig$1 } from "#internal/nitro";
-import { ssrRenderAttrs, ssrInterpolate, ssrRenderComponent, ssrRenderSuspense } from "vue/server-renderer";
 const suspectProtoRx = /"(?:_|\\u005[Ff])(?:_|\\u005[Ff])(?:p|\\u0070)(?:r|\\u0072)(?:o|\\u006[Ff])(?:t|\\u0074)(?:o|\\u006[Ff])(?:_|\\u005[Ff])(?:_|\\u005[Ff])"\s*:/;
 const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
 const JsonSigRx = /^["{[]|^-?[0-9][0-9.]{0,14}$/;
@@ -538,7 +551,7 @@ function createNuxtApp(options) {
   const nuxtApp = __spreadValues({
     provide: void 0,
     globalName: "nuxt",
-    payload: reactive(__spreadValues({
+    payload: vue_cjs_prod.reactive(__spreadValues({
       data: {},
       state: {},
       _errors: {}
@@ -635,7 +648,7 @@ function callWithNuxt(nuxt, setup, args) {
   }
 }
 function useNuxtApp() {
-  const vm = getCurrentInstance();
+  const vm = vue_cjs_prod.getCurrentInstance();
   if (!vm) {
     const nuxtAppInstance = nuxtAppCtx.use();
     if (!nuxtAppInstance) {
@@ -2347,10 +2360,10 @@ var vueRouter_cjs_prod = {};
 })(vueRouter_cjs_prod);
 const useState = (key, init) => {
   const nuxt = useNuxtApp();
-  const state = toRef(nuxt.payload.state, key);
+  const state = vue_cjs_prod.toRef(nuxt.payload.state, key);
   if (state.value === void 0 && init) {
     const initialValue = init();
-    if (isRef(initialValue)) {
+    if (vue_cjs_prod.isRef(initialValue)) {
       nuxt.payload.state[key] = initialValue;
       return initialValue;
     }
@@ -2371,15 +2384,6 @@ const throwError = (_err) => {
     nuxtApp.ssrContext.error = nuxtApp.ssrContext.error || err;
   }
   return err;
-};
-const clearError = async (options = {}) => {
-  const nuxtApp = useNuxtApp();
-  const error = useError();
-  nuxtApp.callHook("app:error:cleared", options);
-  if (options.redirect) {
-    await nuxtApp.$router.replace(options.redirect);
-  }
-  error.value = null;
 };
 const MIMES = {
   html: "text/html",
@@ -2468,7 +2472,7 @@ function defineNuxtLink(options) {
   const componentName = options.componentName || "NuxtLink";
   const checkPropConflicts = (props, main, sub) => {
   };
-  return defineComponent({
+  return vue_cjs_prod.defineComponent({
     name: componentName,
     props: {
       to: {
@@ -2529,11 +2533,11 @@ function defineNuxtLink(options) {
     },
     setup(props, { slots }) {
       const router = useRouter();
-      const to = computed(() => {
+      const to = vue_cjs_prod.computed(() => {
         checkPropConflicts();
         return props.to || props.href || "";
       });
-      const isExternal = computed(() => {
+      const isExternal = vue_cjs_prod.computed(() => {
         if (props.external) {
           return true;
         }
@@ -2548,7 +2552,7 @@ function defineNuxtLink(options) {
       return () => {
         var _a, _b, _c;
         if (!isExternal.value) {
-          return h(resolveComponent("RouterLink"), {
+          return vue_cjs_prod.h(vue_cjs_prod.resolveComponent("RouterLink"), {
             to: to.value,
             activeClass: props.activeClass || options.activeClass,
             exactActiveClass: props.exactActiveClass || options.exactActiveClass,
@@ -2560,7 +2564,7 @@ function defineNuxtLink(options) {
         const target = props.target || null;
         checkPropConflicts();
         const rel = props.noRel ? null : firstNonUndefined(props.rel, options.externalRelAttribute, href ? DEFAULT_EXTERNAL_REL_ATTRIBUTE : "") || null;
-        return h("a", { href, rel, target }, (_c = slots.default) == null ? void 0 : _c.call(slots));
+        return vue_cjs_prod.h("a", { href, rel, target }, (_c = slots.default) == null ? void 0 : _c.call(slots));
       };
     }
   });
@@ -2998,10 +3002,9 @@ shared_cjs_prod.toNumber = toNumber;
 shared_cjs_prod.toRawType = toRawType;
 shared_cjs_prod.toTypeString = toTypeString;
 function useHead(meta) {
-  const resolvedMeta = isFunction_1(meta) ? computed(meta) : meta;
+  const resolvedMeta = isFunction_1(meta) ? vue_cjs_prod.computed(meta) : meta;
   useNuxtApp()._useHead(resolvedMeta);
 }
-const tailwind = "";
 const preload = defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.mixin({
     beforeCreate() {
@@ -3347,17 +3350,17 @@ const vueuseHead_62a35df6 = defineNuxtPlugin((nuxtApp) => {
   const head = createHead();
   nuxtApp.vueApp.use(head);
   nuxtApp.hooks.hookOnce("app:mounted", () => {
-    watchEffect(() => {
+    vue_cjs_prod.watchEffect(() => {
       head.updateDOM();
     });
   });
-  const titleTemplate = ref();
+  const titleTemplate = vue_cjs_prod.ref();
   nuxtApp._useHead = (_meta) => {
-    const meta = ref(_meta);
+    const meta = vue_cjs_prod.ref(_meta);
     if ("titleTemplate" in meta.value) {
       titleTemplate.value = meta.value.titleTemplate;
     }
-    const headObj = computed(() => {
+    const headObj = vue_cjs_prod.computed(() => {
       const overrides = { meta: [] };
       if (titleTemplate.value && "title" in meta.value) {
         overrides.title = typeof titleTemplate.value === "function" ? titleTemplate.value(meta.value.title) : titleTemplate.value.replace(/%s/g, meta.value.title);
@@ -3432,7 +3435,7 @@ const globalProps = {
   title: String,
   translate: String
 };
-const Script = defineComponent({
+const Script = vue_cjs_prod.defineComponent({
   name: "Script",
   props: __spreadProps(__spreadValues({}, globalProps), {
     async: Boolean,
@@ -3454,7 +3457,7 @@ const Script = defineComponent({
     script: [script]
   }))
 });
-const Link = defineComponent({
+const Link = vue_cjs_prod.defineComponent({
   name: "Link",
   props: __spreadProps(__spreadValues({}, globalProps), {
     as: String,
@@ -3482,7 +3485,7 @@ const Link = defineComponent({
     link: [link]
   }))
 });
-const Base = defineComponent({
+const Base = vue_cjs_prod.defineComponent({
   name: "Base",
   props: __spreadProps(__spreadValues({}, globalProps), {
     href: String,
@@ -3492,7 +3495,7 @@ const Base = defineComponent({
     base
   }))
 });
-const Title = defineComponent({
+const Title = vue_cjs_prod.defineComponent({
   name: "Title",
   setup: setupForUseMeta((_, { slots }) => {
     var _a, _b, _c;
@@ -3502,7 +3505,7 @@ const Title = defineComponent({
     };
   })
 });
-const Meta = defineComponent({
+const Meta = vue_cjs_prod.defineComponent({
   name: "Meta",
   props: __spreadProps(__spreadValues({}, globalProps), {
     charset: String,
@@ -3514,7 +3517,7 @@ const Meta = defineComponent({
     meta: [meta]
   }))
 });
-const Style = defineComponent({
+const Style = vue_cjs_prod.defineComponent({
   name: "Style",
   props: __spreadProps(__spreadValues({}, globalProps), {
     type: String,
@@ -3538,14 +3541,14 @@ const Style = defineComponent({
     };
   })
 });
-const Head = defineComponent({
+const Head = vue_cjs_prod.defineComponent({
   name: "Head",
   setup: (_props, ctx) => () => {
     var _a, _b;
     return (_b = (_a = ctx.slots).default) == null ? void 0 : _b.call(_a);
   }
 });
-const Html = defineComponent({
+const Html = vue_cjs_prod.defineComponent({
   name: "Html",
   props: __spreadProps(__spreadValues({}, globalProps), {
     manifest: String,
@@ -3554,7 +3557,7 @@ const Html = defineComponent({
   }),
   setup: setupForUseMeta((htmlAttrs) => ({ htmlAttrs }), true)
 });
-const Body = defineComponent({
+const Body = vue_cjs_prod.defineComponent({
   name: "Body",
   props: globalProps,
   setup: setupForUseMeta((bodyAttrs) => ({ bodyAttrs }), true)
@@ -3574,7 +3577,7 @@ const Components = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePr
 const metaConfig = { "globalMeta": { "charset": "utf-8", "viewport": "width=device-width, initial-scale=1", "meta": [], "link": [], "style": [], "script": [] } };
 const metaMixin = {
   created() {
-    const instance = getCurrentInstance();
+    const instance = vue_cjs_prod.getCurrentInstance();
     if (!instance) {
       return;
     }
@@ -3583,12 +3586,12 @@ const metaMixin = {
       return;
     }
     const nuxtApp = useNuxtApp();
-    const source = typeof options.head === "function" ? computed(() => options.head(nuxtApp)) : options.head;
+    const source = typeof options.head === "function" ? vue_cjs_prod.computed(() => options.head(nuxtApp)) : options.head;
     useHead(source);
   }
 };
 const _6a68b2f9 = defineNuxtPlugin((nuxtApp) => {
-  useHead(markRaw(metaConfig.globalMeta));
+  useHead(vue_cjs_prod.markRaw(metaConfig.globalMeta));
   nuxtApp.vueApp.mixin(metaMixin);
   for (const name in Components) {
     nuxtApp.vueApp.component(name, Components[name]);
@@ -3625,7 +3628,7 @@ const _5d4746b4 = defineNuxtPlugin((nuxtApp) => {
     hooks[hook].push(guard);
     return () => hooks[hook].splice(hooks[hook].indexOf(guard), 1);
   };
-  const route = reactive(getRouteFromPath(initialURL));
+  const route = vue_cjs_prod.reactive(getRouteFromPath(initialURL));
   async function handleNavigation(url, replace) {
     try {
       const to = getRouteFromPath(url);
@@ -3658,8 +3661,8 @@ const _5d4746b4 = defineNuxtPlugin((nuxtApp) => {
     isReady: () => Promise.resolve(),
     options: {},
     install: () => Promise.resolve(),
-    push: (url) => handleNavigation(url, false),
-    replace: (url) => handleNavigation(url, true),
+    push: (url) => handleNavigation(url),
+    replace: (url) => handleNavigation(url),
     back: () => window.history.go(-1),
     go: (delta) => window.history.go(delta),
     forward: () => window.history.go(1),
@@ -3683,7 +3686,7 @@ const _5d4746b4 = defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component("RouterLink", {
     functional: true,
     props: { to: String },
-    setup: (props, { slots }) => () => h("a", { href: props.to, onClick: (e) => {
+    setup: (props, { slots }) => () => vue_cjs_prod.h("a", { href: props.to, onClick: (e) => {
       e.preventDefault();
       router.push(props.to);
     } }, slots)
@@ -3695,7 +3698,7 @@ const _5d4746b4 = defineNuxtPlugin((nuxtApp) => {
   };
   nuxtApp.hooks.hookOnce("app:created", async () => {
     router.beforeEach(async (to, from) => {
-      to.meta = reactive(to.meta || {});
+      to.meta = vue_cjs_prod.reactive(to.meta || {});
       nuxtApp._processingMiddleware = true;
       const middlewareEntries = new Set(nuxtApp._middleware.global);
       for (const middleware of middlewareEntries) {
@@ -3735,7 +3738,6 @@ const _plugins = [
   _6a68b2f9,
   _5d4746b4
 ];
-const error404_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -3785,17 +3787,17 @@ const _sfc_main$b = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0$1;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-011aae6d><div class="fixed left-0 right-0 spotlight z-10" data-v-011aae6d></div><div class="max-w-520px text-center z-20" data-v-011aae6d><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-011aae6d>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-011aae6d>${ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-011aae6d>`);
-      _push(ssrRenderComponent(_component_NuxtLink, {
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-011aae6d><div class="fixed left-0 right-0 spotlight z-10" data-v-011aae6d></div><div class="max-w-520px text-center z-20" data-v-011aae6d><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-011aae6d>${serverRenderer.exports.ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-011aae6d>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_NuxtLink, {
         to: "/",
         class: "gradient-border text-md sm:text-xl py-2 px-4 sm:py-3 sm:px-6 cursor-pointer"
       }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
+        default: vue_cjs_prod.withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`${ssrInterpolate(__props.backHome)}`);
+            _push2(`${serverRenderer.exports.ssrInterpolate(__props.backHome)}`);
           } else {
             return [
-              createTextVNode(toDisplayString$1(__props.backHome), 1)
+              vue_cjs_prod.createTextVNode(vue_cjs_prod.toDisplayString(__props.backHome), 1)
             ];
           }
         }),
@@ -3807,12 +3809,11 @@ const _sfc_main$b = {
 };
 const _sfc_setup$b = _sfc_main$b.setup;
 _sfc_main$b.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-404.vue");
   return _sfc_setup$b ? _sfc_setup$b(props, ctx) : void 0;
 };
 const Error404 = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-011aae6d"]]);
-const error500_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$a = {
   name: "error-500",
   __ssrInlineRender: true,
@@ -3850,69 +3851,17 @@ const _sfc_main$a = {
       ]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-6aee6495><div class="fixed -bottom-1/2 left-0 right-0 h-1/2 spotlight" data-v-6aee6495></div><div class="max-w-520px text-center" data-v-6aee6495><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-6aee6495>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-6aee6495>${ssrInterpolate(__props.description)}</p></div></div>`);
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-6aee6495><div class="fixed -bottom-1/2 left-0 right-0 h-1/2 spotlight" data-v-6aee6495></div><div class="max-w-520px text-center" data-v-6aee6495><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-6aee6495>${serverRenderer.exports.ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-6aee6495>${serverRenderer.exports.ssrInterpolate(__props.description)}</p></div></div>`);
     };
   }
 };
 const _sfc_setup$a = _sfc_main$a.setup;
 _sfc_main$a.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-500.vue");
   return _sfc_setup$a ? _sfc_setup$a(props, ctx) : void 0;
 };
 const Error500 = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-6aee6495"]]);
-const errorDev_vue_vue_type_style_index_0_scoped_true_lang = "";
-const _sfc_main$9 = {
-  name: "error-dev",
-  __ssrInlineRender: true,
-  props: {
-    appName: {
-      type: String,
-      default: "Nuxt"
-    },
-    version: {
-      type: String,
-      default: ""
-    },
-    statusCode: {
-      type: String,
-      default: "500"
-    },
-    statusMessage: {
-      type: String,
-      default: "Server error"
-    },
-    description: {
-      type: String,
-      default: "An error occurred in the application and the page could not be served. If you are the application owner, check your server logs for details."
-    },
-    stack: {
-      type: String,
-      default: ""
-    }
-  },
-  setup(__props) {
-    const props = __props;
-    useHead({
-      title: `${props.statusCode} - ${props.statusMessage} | ${props.appName}`,
-      script: [],
-      style: [
-        {
-          children: `*,:before,:after{-webkit-box-sizing:border-box;box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}*{--tw-ring-inset:var(--tw-empty, );--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(14, 165, 233, .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{margin:0;font-family:inherit;line-height:inherit}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";line-height:1.5}h1,p,pre{margin:0}h1{font-size:inherit;font-weight:inherit}pre{font-size:1em;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}`
-        }
-      ]
-    });
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white px-10 pt-14 dark:bg-black text-black dark:text-white min-h-screen flex flex-col" }, _attrs))} data-v-693cabb2><div class="fixed left-0 right-0 spotlight" data-v-693cabb2></div><h1 class="text-6xl sm:text-8xl font-medium mb-6" data-v-693cabb2>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl sm:text-2xl font-light mb-8 leading-tight" data-v-693cabb2>${ssrInterpolate(__props.description)}</p><div class="bg-white rounded-t-md bg-black/5 dark:bg-white/10 flex-1 overflow-y-auto h-auto" data-v-693cabb2><pre class="text-xl font-light leading-tight z-10 p-8" data-v-693cabb2>${__props.stack}</pre></div></div>`);
-    };
-  }
-};
-const _sfc_setup$9 = _sfc_main$9.setup;
-_sfc_main$9.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue");
-  return _sfc_setup$9 ? _sfc_setup$9(props, ctx) : void 0;
-};
 const _sfc_main$8 = {
   name: "nuxt-error-page",
   __ssrInlineRender: true,
@@ -3937,13 +3886,13 @@ const _sfc_main$8 = {
     const stack = void 0;
     const ErrorTemplate = is404 ? Error404 : Error500;
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
+      _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(ErrorTemplate), vue_cjs_prod.mergeProps({ statusCode: vue_cjs_prod.unref(statusCode), statusMessage: vue_cjs_prod.unref(statusMessage), description: vue_cjs_prod.unref(description), stack: vue_cjs_prod.unref(stack) }, _attrs), null, _parent));
     };
   }
 };
 const _sfc_setup$8 = _sfc_main$8.setup;
 _sfc_main$8.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
   return _sfc_setup$8 ? _sfc_setup$8(props, ctx) : void 0;
 };
@@ -3954,20 +3903,20 @@ const _sfc_main$7 = {
     const nuxtApp = useNuxtApp();
     nuxtApp.hooks.callHookWith((hooks) => hooks.map((hook) => hook()), "vue:setup");
     const error = useError();
-    onErrorCaptured((err, target, info) => {
+    vue_cjs_prod.onErrorCaptured((err, target, info) => {
       nuxtApp.hooks.callHook("vue:error", err, target, info).catch((hookError) => console.error("[nuxt] Error in `vue:error` hook", hookError));
       {
         callWithNuxt(nuxtApp, throwError, [err]);
       }
     });
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_App = resolveComponent("App");
-      ssrRenderSuspense(_push, {
+      const _component_App = vue_cjs_prod.resolveComponent("App");
+      serverRenderer.exports.ssrRenderSuspense(_push, {
         default: () => {
-          if (unref(error)) {
-            _push(ssrRenderComponent(unref(_sfc_main$8), { error: unref(error) }, null, _parent));
+          if (vue_cjs_prod.unref(error)) {
+            _push(serverRenderer.exports.ssrRenderComponent(vue_cjs_prod.unref(_sfc_main$8), { error: vue_cjs_prod.unref(error) }, null, _parent));
           } else {
-            _push(ssrRenderComponent(_component_App, null, null, _parent));
+            _push(serverRenderer.exports.ssrRenderComponent(_component_App, null, null, _parent));
           }
         },
         _: 1
@@ -3977,13 +3926,13 @@ const _sfc_main$7 = {
 };
 const _sfc_setup$7 = _sfc_main$7.setup;
 _sfc_main$7.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup$7 ? _sfc_setup$7(props, ctx) : void 0;
 };
 const _sfc_main$6 = {};
 function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
-  _push(`<svg${ssrRenderAttrs(mergeProps({
+  _push(`<svg${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
     viewBox: "0 0 24 24",
@@ -3992,14 +3941,14 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
 }
 const _sfc_setup$6 = _sfc_main$6.setup;
 _sfc_main$6.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt-hero-icons/outline/src/components/SunIcon.vue");
   return _sfc_setup$6 ? _sfc_setup$6(props, ctx) : void 0;
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["ssrRender", _sfc_ssrRender$4]]);
 const _sfc_main$5 = {};
 function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
-  _push(`<svg${ssrRenderAttrs(mergeProps({
+  _push(`<svg${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
     viewBox: "0 0 24 24",
@@ -4008,7 +3957,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
 }
 const _sfc_setup$5 = _sfc_main$5.setup;
 _sfc_main$5.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
@@ -4017,15 +3966,15 @@ const _sfc_main$4 = {
   name: "Navbar",
   __ssrInlineRender: true,
   setup(__props) {
-    const lightmode = ref(true);
+    const lightmode = vue_cjs_prod.ref(true);
     return (_ctx, _push, _parent, _attrs) => {
       const _component_outline_sun_icon = __nuxt_component_0;
       const _component_outline_moon_icon = __nuxt_component_1$1;
-      _push(`<nav${ssrRenderAttrs(mergeProps({ class: "flex flex-row justify-between py-3 border-b" }, _attrs))}><div class="flex p-2 ml-2 border border-gray-400 hover:border-gray-800 text-gray-400 hover:text-gray-800 rounded-full hover:cursor-pointer">`);
+      _push(`<nav${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex flex-row justify-between py-3 border-b" }, _attrs))}><div class="flex p-2 ml-2 border border-gray-400 hover:border-gray-800 text-gray-400 hover:text-gray-800 rounded-full hover:cursor-pointer">`);
       if (lightmode.value) {
-        _push(ssrRenderComponent(_component_outline_sun_icon, { class: "w-5 h-5" }, null, _parent));
+        _push(serverRenderer.exports.ssrRenderComponent(_component_outline_sun_icon, { class: "w-5 h-5" }, null, _parent));
       } else {
-        _push(ssrRenderComponent(_component_outline_moon_icon, { class: "w-5 h-5" }, null, _parent));
+        _push(serverRenderer.exports.ssrRenderComponent(_component_outline_moon_icon, { class: "w-5 h-5" }, null, _parent));
       }
       _push(`</div><div class="self-end items-center pb-1"><ul class="flex text-gray-500 text-md"><li class="px-2 hover:cursor-pointer hover:text-gray-800"> Home </li><li class="px-2 hover:cursor-pointer hover:text-gray-800"> About </li><li class="px-2 hover:cursor-pointer hover:text-gray-800"> Projects </li></ul></div></nav>`);
     };
@@ -4033,28 +3982,28 @@ const _sfc_main$4 = {
 };
 const _sfc_setup$4 = _sfc_main$4.setup;
 _sfc_main$4.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Navbar.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
 const _sfc_main$3 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "flex flex-col content-center my-40" }, _attrs))}><div class="pb-3 text-3xl md:text-4xl self-center font-bold text-gray-700">Antonio Medeiros</div><div class="pb-2 text-xl self-center text-gray-400">FullStack Developer</div><div class="self-center flex items-center"><a href="https://www.github.com/antoniomedeiros1/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/antonio-medeiros-dev/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></div></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "flex flex-col content-center my-40" }, _attrs))}><div class="pb-3 text-3xl md:text-4xl self-center font-bold text-gray-700">Antonio Medeiros</div><div class="pb-2 text-xl self-center text-gray-400">FullStack Developer</div><div class="self-center flex items-center"><a href="https://www.github.com/antoniomedeiros1/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/antonio-medeiros-dev/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></div></div>`);
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Info.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
 const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2]]);
 const _sfc_main$2 = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 font-bold">About</h1><p class="py-2 text-gray-600"> Experience developing SPAs with VueJs and TailwindCSS frameworks, but I&#39;m also familiar with Python programming language, using the FastAPI framework, NodeJS with Express, and SQL and NoSQL databases such as MySQL and Mongo. Basic knowledge of operations, Linux, Containers, AWS, pipelines for building, testing and deploying. </p><p class="py-2 text-gray-600"> I currently live in Juiz de Fora, Brazil, studying Computational Engineering at the Federal University of Juiz de Fora, with big interest on topics such as High Performance Computing (HPC) and numerical simulations. </p></div>`);
+  _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 font-bold">About</h1><p class="py-2 text-gray-600"> Experience developing SPAs with VueJs and TailwindCSS frameworks, but I&#39;m also familiar with Python programming language, using the FastAPI framework, NodeJS with Express, and SQL and NoSQL databases such as MySQL and Mongo. Basic knowledge of operations, Linux, Containers, AWS, pipelines for building, testing and deploying. </p><p class="py-2 text-gray-600"> I currently live in Juiz de Fora, Brazil, studying Computational Engineering at the Federal University of Juiz de Fora, with big interest on topics such as High Performance Computing (HPC) and numerical simulations. </p></div>`);
 }
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/About.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
@@ -4064,7 +4013,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
 }
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Projects.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
@@ -4073,7 +4022,7 @@ const _sfc_main = {
   name: "app",
   __ssrInlineRender: true,
   setup(__props) {
-    const page = ref(1);
+    const page = vue_cjs_prod.ref(1);
     const updatePage = (pg) => {
       page.value = parseInt(pg);
     };
@@ -4082,20 +4031,20 @@ const _sfc_main = {
       const _component_Info = __nuxt_component_1;
       const _component_About = __nuxt_component_2;
       const _component_Projects = __nuxt_component_3;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "md:px-48 2xl:px-72 h-screen px-10" }, _attrs))}>`);
-      _push(ssrRenderComponent(_component_Navbar, { onUpdate: updatePage }, null, _parent));
+      _push(`<div${serverRenderer.exports.ssrRenderAttrs(vue_cjs_prod.mergeProps({ class: "md:px-48 2xl:px-72 h-screen px-10" }, _attrs))}>`);
+      _push(serverRenderer.exports.ssrRenderComponent(_component_Navbar, { onUpdate: updatePage }, null, _parent));
       if (page.value === 1) {
-        _push(ssrRenderComponent(_component_Info, null, null, _parent));
+        _push(serverRenderer.exports.ssrRenderComponent(_component_Info, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
       if (page.value === 2) {
-        _push(ssrRenderComponent(_component_About, null, null, _parent));
+        _push(serverRenderer.exports.ssrRenderComponent(_component_About, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
       if (page.value === 3) {
-        _push(ssrRenderComponent(_component_Projects, null, null, _parent));
+        _push(serverRenderer.exports.ssrRenderComponent(_component_Projects, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
@@ -4105,7 +4054,7 @@ const _sfc_main = {
 };
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
+  const ssrContext = vue_cjs_prod.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
@@ -4118,7 +4067,7 @@ let entry;
 const plugins = normalizePlugins(_plugins);
 {
   entry = async function createNuxtAppServer(ssrContext = {}) {
-    const vueApp = createApp(_sfc_main$7);
+    const vueApp = vue_cjs_prod.createApp(_sfc_main$7);
     vueApp.component("App", _sfc_main);
     const nuxt = createNuxtApp({ vueApp, ssrContext });
     try {
@@ -4132,4 +4081,6 @@ const plugins = normalizePlugins(_plugins);
   };
 }
 const entry$1 = (ctx) => entry(ctx);
+
 export { entry$1 as default };
+//# sourceMappingURL=server.mjs.map
