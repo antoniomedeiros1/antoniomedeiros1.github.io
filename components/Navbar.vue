@@ -23,10 +23,19 @@ const changeMode = () => {
 				class="w-5 h-5 "/>
 		</div>
 		<div class=" self-end items-center pb-1">
-			<ul class=" flex text-gray-500">
-				<li class=" px-2">Home</li>
-				<li class=" px-2">About</li>
-				<li class=" px-2">Projects</li>
+			<ul class=" flex text-gray-500 text-md">
+				<li class=" px-2 hover:cursor-pointer hover:text-gray-800" 
+						@click="this.$emit('update', '1')">
+						Home
+				</li>
+				<li class=" px-2 hover:cursor-pointer hover:text-gray-800" 
+						@click="this.$emit('update', '2')">
+						About
+				</li>
+				<li class=" px-2 hover:cursor-pointer hover:text-gray-800" 
+						@click="this.$emit('update', '3')">
+						Projects
+				</li>
 			</ul>
 		</div>
 	</nav>

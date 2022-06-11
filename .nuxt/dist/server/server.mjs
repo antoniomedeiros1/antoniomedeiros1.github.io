@@ -119,9 +119,9 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/@nuxt-hero-icons/outline/src/components/SunIcon.vue ($id_6092b2b2)
 // - /node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue ($id_f33367d2)
 // - /components/Navbar.vue ($id_59150d95)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue ($id_055f6123)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue ($id_a56daadd)
 // - /components/Info.vue ($id_a2985181)
+// - /components/About.vue ($id_298754c7)
+// - /components/Projects.vue ($id_9f498176)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
 
@@ -1558,7 +1558,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@nuxtjs/t
 
 // --------------------
 const $id_0a1402e6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Roboto,sans-serif;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.my-40{margin-bottom:10rem;margin-top:10rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.ml-2{margin-left:.5rem}.flex{display:flex}.h-6{height:1.5rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-6{width:1.5rem}.w-5{width:1.25rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.content-center{align-content:center}.items-center{align-items:center}.justify-between{justify-content:space-between}.self-end{align-self:flex-end}.self-center{align-self:center}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237/var(--tw-bg-opacity))}.p-2{padding:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pb-3{padding-bottom:.75rem}.pb-2{padding-bottom:.5rem}.pb-1{padding-bottom:.25rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.hover\\:cursor-pointer:hover{cursor:pointer}.hover\\:border-gray-800:hover{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity))}.hover\\:text-gray-800:hover{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}@media (min-width:768px){.md\\:px-48{padding-left:12rem;padding-right:12rem}.md\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width:1536px){.\\32xl\\:px-72{padding-left:18rem;padding-right:18rem}}";
+__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Roboto,sans-serif;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.mx-4{margin-left:1rem;margin-right:1rem}.my-5{margin-bottom:1.25rem;margin-top:1.25rem}.my-40{margin-bottom:10rem;margin-top:10rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.ml-2{margin-left:.5rem}.flex{display:flex}.h-5{height:1.25rem}.h-screen{height:100vh}.w-5{width:1.25rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.content-center{align-content:center}.items-center{align-items:center}.justify-between{justify-content:space-between}.self-end{align-self:flex-end}.self-center{align-self:center}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.p-2{padding:.5rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pb-3{padding-bottom:.75rem}.pb-2{padding-bottom:.5rem}.pb-1{padding-bottom:.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-70{opacity:.7}.transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-75{transition-duration:75ms}.duration-150{transition-duration:.15s}.hover\\:cursor-pointer:hover{cursor:pointer}.hover\\:border-gray-800:hover{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity))}.hover\\:text-gray-800:hover{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.hover\\:opacity-100:hover{opacity:1}@media (min-width:768px){.md\\:px-48{padding-left:12rem;padding-right:12rem}.md\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width:1024px){.lg\\:my-10{margin-bottom:2.5rem;margin-top:2.5rem}.lg\\:mr-64{margin-right:16rem}.lg\\:ml-10{margin-left:2.5rem}}@media (min-width:1536px){.\\32xl\\:px-72{padding-left:18rem;padding-right:18rem}}";
 }
 
 
@@ -3089,9 +3089,8 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 // - /node_modules/@nuxt-hero-icons/outline/src/components/SunIcon.vue ($id_6092b2b2)
 // - /node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue ($id_f33367d2)
 // - /components/Navbar.vue ($id_59150d95)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue ($id_055f6123)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue ($id_a56daadd)
 // - /components/Info.vue ($id_a2985181)
+// - /components/About.vue ($id_298754c7)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
 
@@ -3133,9 +3132,9 @@ __vite_ssr_exports__.default = ".bg-white[data-v-573335c0]{--tw-bg-opacity:1;bac
 // - /node_modules/@nuxt-hero-icons/outline/src/components/SunIcon.vue ($id_6092b2b2)
 // - /node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue ($id_f33367d2)
 // - /components/Navbar.vue ($id_59150d95)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue ($id_055f6123)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue ($id_a56daadd)
 // - /components/Info.vue ($id_a2985181)
+// - /components/About.vue ($id_298754c7)
+// - /components/Projects.vue ($id_9f498176)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
 
@@ -3390,6 +3389,8 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // Dependencies: 
 // - /components/Navbar.vue ($id_59150d95)
 // - /components/Info.vue ($id_a2985181)
+// - /components/About.vue ($id_298754c7)
+// - /components/Projects.vue ($id_9f498176)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -3399,34 +3400,73 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Navbar.vue"
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/components/Info.vue");
 
-const _sfc_main = {}
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/components/About.vue");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/components/Projects.vue");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const _sfc_main = {
+  name: 'app',
+  setup(__props, { expose }) {
+  expose();
 
 
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+const page = __vite_ssr_import_4__.ref(1);
+
+const updatePage = (pg) => {
+  page.value = parseInt(pg);
+}
+
+
+const __returned__ = { page, updatePage }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_Navbar = __vite_ssr_import_0__.default
   const _component_Info = __vite_ssr_import_1__.default
+  const _component_About = __vite_ssr_import_2__.default
+  const _component_Projects = __vite_ssr_import_3__.default
 
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "md:px-48 2xl:px-72 min-h-screen px-10 bg-orange-50" }, _attrs))}>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Navbar, null, null, _parent))
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_Info, null, null, _parent))
+  _push(`<div${__vite_ssr_import_6__.ssrRenderAttrs(__vite_ssr_import_5__.mergeProps({ class: "md:px-48 2xl:px-72 h-screen px-10" }, _attrs))}>`)
+  _push(__vite_ssr_import_6__.ssrRenderComponent(_component_Navbar, { onUpdate: $setup.updatePage }, null, _parent))
+  if ($setup.page === 1) {
+    _push(__vite_ssr_import_6__.ssrRenderComponent(_component_Info, null, null, _parent))
+  } else {
+    _push(`<!---->`)
+  }
+  if ($setup.page === 2) {
+    _push(__vite_ssr_import_6__.ssrRenderComponent(_component_About, null, null, _parent))
+  } else {
+    _push(`<!---->`)
+  }
+  if ($setup.page === 3) {
+    _push(__vite_ssr_import_6__.ssrRenderComponent(_component_Projects, null, null, _parent))
+  } else {
+    _push(`<!---->`)
+  }
   _push(`</div>`)
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_7__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("app.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/app.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_8__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/app.vue"]]);
 }
 
 
@@ -3481,7 +3521,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   } else {
     _push(__vite_ssr_import_4__.ssrRenderComponent(_component_outline_moon_icon, { class: "w-5 h-5" }, null, _parent))
   }
-  _push(`</div><div class="self-end items-center pb-1"><ul class="flex text-gray-500"><li class="px-2">Home</li><li class="px-2">About</li><li class="px-2">Projects</li></ul></div></nav>`)
+  _push(`</div><div class="self-end items-center pb-1"><ul class="flex text-gray-500 text-md"><li class="px-2 hover:cursor-pointer hover:text-gray-800"> Home </li><li class="px-2 hover:cursor-pointer hover:text-gray-800"> About </li><li class="px-2 hover:cursor-pointer hover:text-gray-800"> Projects </li></ul></div></nav>`)
 }
 
 
@@ -3584,58 +3624,46 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // Parents: 
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
-// - /node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue ($id_055f6123)
-// - /node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue ($id_a56daadd)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_a2985181 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue");
-
 const _sfc_main = {}
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_outline_mail_icon = __vite_ssr_import_0__.default
-  const _component_outline_phone_icon = __vite_ssr_import_1__.default
-
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "flex flex-col content-center my-40" }, _attrs))}><div class="pb-3 text-3xl md:text-4xl self-center font-bold text-gray-700">Antonio Medeiros</div><div class="pb-2 text-xl self-center text-gray-400">FullStack Developer</div><div class="self-center flex items-center"><div class="w-6 h-6"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></div>`)
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_outline_mail_icon, { class: "w-6 h-6 mx-1" }, null, _parent))
-  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_outline_phone_icon, { class: "w-6 h-6 mx-1" }, null, _parent))
-  _push(`</div></div>`)
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "flex flex-col content-center my-40" }, _attrs))}><div class="pb-3 text-3xl md:text-4xl self-center font-bold text-gray-700">Antonio Medeiros</div><div class="pb-2 text-xl self-center text-gray-400">FullStack Developer</div><div class="self-center flex items-center"><a href="https://www.github.com/antoniomedeiros1/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://www.linkedin.com/in/antonio-medeiros-dev/" class="w-5 h-5 mx-1 opacity-70 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a></div></div>`)
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_2__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Info.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Info.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Info.vue"]]);
 }
 
 
 // --------------------
-// Request: /node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue
+// Request: /components/About.vue
 // Parents: 
-// - /components/Info.vue ($id_a2985181)
+// - /app.vue ($id_2b46e842)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_055f6123 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_298754c7 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const _sfc_main = {}
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
@@ -3643,12 +3671,7 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<svg${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-    xmlns: "http://www.w3.org/2000/svg",
-    fill: "none",
-    viewBox: "0 0 24 24",
-    stroke: "currentColor"
-  }, _attrs))}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>`)
+  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 font-bold">About</h1><p class="py-2 text-gray-600"> Experience developing SPAs with VueJs and TailwindCSS frameworks, but I&#39;m also familiar with Python programming language, using the FastAPI framework, NodeJS with Express, and SQL and NoSQL databases such as MySQL and Mongo. Basic knowledge of operations, Linux, Containers, AWS, pipelines for building, testing and deploying. </p><p class="py-2 text-gray-600"> I currently live in Juiz de Fora, Brazil, studying Computational Engineering at the Federal University of Juiz de Fora, with big interest on topics such as High Performance Computing (HPC) and numerical simulations. </p></div>`)
 }
 
 
@@ -3657,52 +3680,42 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue")
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/About.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/About.vue"]]);
 }
 
 
 // --------------------
-// Request: /node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue
+// Request: /components/Projects.vue
 // Parents: 
-// - /components/Info.vue ($id_a2985181)
+// - /app.vue ($id_2b46e842)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
-const $id_a56daadd = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const $id_9f498176 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
-
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<svg${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({
-    xmlns: "http://www.w3.org/2000/svg",
-    fill: "none",
-    viewBox: "0 0 24 24",
-    stroke: "currentColor"
-  }, _attrs))}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>`)
+  
 }
 
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue")
+  const ssrContext = __vite_ssr_import_0__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Projects.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_1__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Projects.vue"]]);
 }
 
 
@@ -3772,8 +3785,8 @@ const __modules__ = {
   "/node_modules/@nuxt-hero-icons/outline/src/components/SunIcon.vue": $id_6092b2b2,
   "/node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue": $id_f33367d2,
   "/components/Info.vue": $id_a2985181,
-  "/node_modules/@nuxt-hero-icons/outline/src/components/MailIcon.vue": $id_055f6123,
-  "/node_modules/@nuxt-hero-icons/outline/src/components/PhoneIcon.vue": $id_a56daadd
+  "/components/About.vue": $id_298754c7,
+  "/components/Projects.vue": $id_9f498176
 }
 
 
