@@ -9,4 +9,9 @@ export default defineNuxtConfig({
         '@nuxt-hero-icons/outline/nuxt',
         '@nuxt-hero-icons/solid/nuxt',
     ],
+    purgeCSS: {
+        whitelist: ['lvml'],
+        whitelistPatterns: [/leaflet-.+$/],
+        whitelistPatternsChildren: [/leaflet-.+$/]
+    },
 })
