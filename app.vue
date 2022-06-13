@@ -25,7 +25,7 @@ const switchLang = () => {
       <Navbar @changeMode="changeMode" @update="updatePage" @switch="switchLang" :lightmode="lightmode" :lang="lang "/>
       <Info v-if="page === 1" />
       <About v-if="page === 2" :lang="lang"/>
-      <Projects v-if="page === 3 " />
+      <Projects v-if="page === 3" :lang="lang" />
     </div>
   </div>
 </template>
