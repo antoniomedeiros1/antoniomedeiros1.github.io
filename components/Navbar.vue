@@ -3,6 +3,7 @@
 const props = defineProps({
   lang: Number,
 	lightmode: Boolean,
+	active: Number,
 })
 
 </script>
@@ -38,15 +39,18 @@ const props = defineProps({
 		</div>
 		<div class=" self-end items-center pb-1">
 			<ul class=" flex text-gray-500 dark:text-gray-400 text-md ">
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 1 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '1')">
 						Inicio
 				</li>
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 2 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '2')">
 						Sobre
 				</li>
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 3 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '3')">
 						Projetos
 				</li>
@@ -83,15 +87,18 @@ const props = defineProps({
 		</div>
 		<div class=" self-end items-center pb-1">
 			<ul class=" flex text-gray-500 dark:text-gray-400 text-md">
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 1 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '1')">
 						Home
 				</li>
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 2 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '2')">
 						About
 				</li>
-				<li class=" px-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 3 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '3')">
 						Projects
 				</li>
