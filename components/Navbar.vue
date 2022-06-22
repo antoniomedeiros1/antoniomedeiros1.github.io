@@ -13,17 +13,16 @@ const props = defineProps({
 	<nav v-if="lang === 0" class="flex flex-row justify-between py-3 border-b">
 		<div class="flex items-center">
 			<div class="flex p-2 mx-2
-									border border-gray-400 hover:border-gray-800 
 									text-gray-400 hover:text-gray-800 
 									dark:hover:border-white dark:hover:hover:text-white
 									rounded-full hover:cursor-pointer" 
 						@click="this.$emit('changeMode')">
 				<outline-sun-icon 
 					v-if="lightmode" 
-					class="w-5 h-5 "/>
+					class="w-6 h-6 "/>
 				<outline-moon-icon 
 					v-else
-					class="w-5 h-5 "/>
+					class="w-6 h-6 "/>
 			</div>
 			<div class=" text-md p-1 mx-1
 								hover:cursor-pointer hover:grayscale-0
@@ -61,17 +60,16 @@ const props = defineProps({
 	<nav v-else class="flex flex-row justify-between py-3 border-b">
 		<div class="flex items-center">
 			<div class="flex p-2 mx-2
-									border border-gray-400 hover:border-gray-800 
 									text-gray-400 hover:text-gray-800 
 									dark:hover:border-white dark:hover:hover:text-white
 									rounded-full hover:cursor-pointer" 
 						@click="this.$emit('changeMode')">
 				<outline-sun-icon 
 					v-if="lightmode" 
-					class="w-5 h-5 "/>
+					class="w-6 h-6 "/>
 				<outline-moon-icon 
 					v-else
-					class="w-5 h-5 "/>
+					class="w-6 h-6 "/>
 			</div>
 			<div class=" text-md p-1 mx-1
 								hover:cursor-pointer hover:grayscale-0

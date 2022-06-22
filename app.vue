@@ -20,19 +20,21 @@ const switchLang = () => {
 </script>
 
 <template>
-  <div :class= " !lightmode ? 'dark' : '' " >
-    <div class=" md:px-48 2xl:px-72 h-screen px-10 dark:bg-slate-800">
-      <Navbar 
-          @changeMode="changeMode" 
-          @update="updatePage" 
-          @switch="switchLang" 
-          :lightmode="lightmode" 
-          :lang="lang "
-          :active="page"
-        />
-      <Info v-if="page === 1" />
-      <About v-if="page === 2" :lang="lang"/>
-      <Projects v-if="page === 3" :lang="lang" />
+  <div :class= " !lightmode ? 'dark' : '' " class="">
+    <div class="dark:bg-slate-800">
+      <div class=" max-w-7xl mx-auto h-screen px-10 ">
+        <Navbar 
+            @changeMode="changeMode" 
+            @update="updatePage" 
+            @switch="switchLang" 
+            :lightmode="lightmode" 
+            :lang="lang "
+            :active="page"
+          />
+        <Info v-if="page === 1" />
+        <About v-if="page === 2" :lang="lang"/>
+        <Projects v-if="page === 3" :lang="lang" />
+      </div>
     </div>
   </div>
 </template>
