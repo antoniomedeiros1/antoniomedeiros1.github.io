@@ -121,6 +121,7 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /components/Navbar.vue ($id_59150d95)
 // - /components/Info.vue ($id_a2985181)
 // - /components/About.vue ($id_298754c7)
+// - /components/Card.vue ($id_243aaff2)
 // - /components/Projects.vue ($id_9f498176)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
@@ -1558,7 +1559,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@nuxtjs/t
 
 // --------------------
 const $id_0a1402e6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Roboto,sans-serif;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.mx-4{margin-left:1rem;margin-right:1rem}.my-5{margin-bottom:1.25rem;margin-top:1.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-40{margin-bottom:10rem;margin-top:10rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-auto{margin-left:auto;margin-right:auto}.flex{display:flex}.hidden{display:none}.h-10{height:2.5rem}.h-5{height:1.25rem}.h-screen{height:100vh}.h-6{height:1.5rem}.w-10{width:2.5rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.max-w-7xl{max-width:80rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.content-center{align-content:center}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.self-end{align-self:flex-end}.self-center{align-self:center}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-dotted{border-style:dotted}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.p-2{padding:.5rem}.p-1{padding:.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pb-3{padding-bottom:.75rem}.pb-2{padding-bottom:.5rem}.pb-1{padding-bottom:.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\\:cursor-pointer:hover{cursor:pointer}.hover\\:border-gray-800:hover{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity))}.hover\\:text-gray-800:hover{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.hover\\:opacity-100:hover{opacity:1}.hover\\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark .dark\\:bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity))}.dark .dark\\:text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246/var(--tw-text-opacity))}.dark .dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark .dark\\:text-gray-50{--tw-text-opacity:1;color:rgb(249 250 251/var(--tw-text-opacity))}.dark .dark\\:invert{--tw-invert:invert(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark .dark\\:hover\\:border-white:hover{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.dark .dark\\:hover\\:hover\\:text-white:hover:hover,.dark .dark\\:hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}@media (min-width:768px){.md\\:inline{display:inline}.md\\:px-48{padding-left:12rem;padding-right:12rem}.md\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width:1024px){.lg\\:my-10{margin-bottom:2.5rem;margin-top:2.5rem}.lg\\:mr-64{margin-right:16rem}.lg\\:ml-10{margin-left:2.5rem}}@media (min-width:1280px){.xl\\:mx-auto{margin-left:auto;margin-right:auto}.xl\\:max-w-7xl{max-width:80rem}}";
+__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Roboto,sans-serif;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.mx-4{margin-left:1rem;margin-right:1rem}.my-5{margin-bottom:1.25rem;margin-top:1.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.my-40{margin-bottom:10rem;margin-top:10rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-2{margin-top:.5rem}.flex{display:flex}.hidden{display:none}.h-10{height:2.5rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-screen{height:100vh}.w-10{width:2.5rem}.w-full{width:100%}.w-5{width:1.25rem}.w-6{width:1.5rem}.max-w-7xl{max-width:80rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.content-center{align-content:center}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.self-end{align-self:flex-end}.self-center{align-self:center}.rounded-lg{border-radius:.5rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-dotted{border-style:dotted}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity))}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.bg-transparent{background-color:transparent}.p-4{padding:1rem}.p-2{padding:.5rem}.p-1{padding:.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-4{padding-left:1rem;padding-right:1rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.pb-3{padding-bottom:.75rem}.pb-2{padding-bottom:.5rem}.pb-1{padding-bottom:.25rem}.text-xl{font-size:1.25rem}.text-lg,.text-xl{line-height:1.75rem}.text-lg{font-size:1.125rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\\:cursor-pointer:hover{cursor:pointer}.hover\\:text-gray-800:hover{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.hover\\:opacity-100:hover{opacity:1}.hover\\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark .dark\\:bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity))}.dark .dark\\:text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246/var(--tw-text-opacity))}.dark .dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark .dark\\:text-gray-50{--tw-text-opacity:1;color:rgb(249 250 251/var(--tw-text-opacity))}.dark .dark\\:invert{--tw-invert:invert(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark .dark\\:hover\\:border-white:hover{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.dark .dark\\:hover\\:hover\\:text-white:hover:hover,.dark .dark\\:hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}@media (min-width:768px){.md\\:inline{display:inline}.md\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}@media (min-width:1024px){.lg\\:my-10{margin-bottom:2.5rem;margin-top:2.5rem}.lg\\:mr-64{margin-right:16rem}.lg\\:ml-10{margin-left:2.5rem}.lg\\:mr-16{margin-right:4rem}}";
 }
 
 
@@ -3090,6 +3091,7 @@ Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configura
 // - /node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue ($id_f33367d2)
 // - /components/Navbar.vue ($id_59150d95)
 // - /components/Info.vue ($id_a2985181)
+// - /components/Card.vue ($id_243aaff2)
 // - /components/Projects.vue ($id_9f498176)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
@@ -3134,6 +3136,7 @@ __vite_ssr_exports__.default = ".bg-white[data-v-573335c0]{--tw-bg-opacity:1;bac
 // - /components/Navbar.vue ($id_59150d95)
 // - /components/Info.vue ($id_a2985181)
 // - /components/About.vue ($id_298754c7)
+// - /components/Card.vue ($id_243aaff2)
 // - /components/Projects.vue ($id_9f498176)
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
@@ -3760,15 +3763,100 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_1__.default(_sfc_m
 // Parents: 
 // - /app.vue ($id_2b46e842)
 // Dependencies: 
+// - /components/Card.vue ($id_243aaff2)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_9f498176 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/Card.vue");
+
 const _sfc_main = {
   name: 'Projects',
   props: {
   lang: Number,
+},
+  setup(__props, { expose }) {
+  expose();
+
+const props = __props
+
+
+
+
+
+const __returned__ = { props }
+Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
+return __returned__
+}
+
+}
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_Card = __vite_ssr_import_0__.default
+
+  if ($props.lang === 0) {
+    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "mx-4 my-5 lg:mr-16 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Projetos 🛠️</h1>`)
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Site GET EngComp (UFJF)",
+      descricao: "Site desenvolvido com React e Bootstrap para o Grupo de Educação Tutorial da Engenharia Computacional de Juiz de Fora.",
+      url: "https://getengcomp.netlify.app",
+      tags: ['React', 'Bootstrap']
+    }, null, _parent))
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Fiado Só Amanhã",
+      descricao: "Aplicação feita com Laravel com o propósito de oferecer aos pequenos negócios e comércios\n                 um sistema de gerenciamento de dívidas e dados dos clientes.",
+      url: "https://github.com/aryneto1/fiado-so-amanha",
+      tags: ['Laravel', 'PHP', 'MySQL', 'TailwindCSS', 'jQuery']
+    }, null, _parent))
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Semente",
+      descricao: "Aplicativo desenvolvido para o projeto Semente, que conta com um chatbot integrado (Dialogflow) com\n                  a proposta de ser um aplicativo sobre saúde mental e com orientações sobre onde buscar ajuda",
+      url: "https://github.com/antoniomedeiros1/semente_app",
+      tags: ['Flutter', 'Firebase', 'Dialogflow', 'Cloud Functions']
+    }, null, _parent))
+    _push(`</div>`)
+  } else {
+    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Projects🛠️</h1></div>`)
+  }
+}
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Projects.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Projects.vue"]]);
+}
+
+
+// --------------------
+// Request: /components/Card.vue
+// Parents: 
+// - /components/Projects.vue ($id_9f498176)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_243aaff2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {
+  name: 'Card',
+  props: {
+  title: String,
+  descricao: String,
+  url: String,
+  tags: Array,
 },
   setup(__props, { expose }) {
   expose();
@@ -3791,11 +3879,21 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  if ($props.lang === 0) {
-    _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Em breve 🛠️</h1></div>`)
-  } else {
-    _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Coming soon 🛠️</h1></div>`)
-  }
+  _push(`<div${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "my-4 rounded-lg border w-full border-gray-300" }, _attrs))
+  }><div class="p-4"><h1 class="text-lg text-gray-700 dark:text-gray-100 font-bold">${
+    __vite_ssr_import_1__.ssrInterpolate($props.title)
+  }</h1><p class="py-2 text-gray-600 dark:text-gray-400">${
+    __vite_ssr_import_1__.ssrInterpolate($props.descricao)
+  }</p><a${
+    __vite_ssr_import_1__.ssrRenderAttr("href", $props.url)
+  } class="text-blue-500">${
+    __vite_ssr_import_1__.ssrInterpolate($props.url)
+  }</a><div class="flex mt-2"><!--[-->`)
+  __vite_ssr_import_1__.ssrRenderList($props.tags, (tag) => {
+    _push(`<button class="bg-transparent text-purple-500 mr-2 mt-1 py-1 px-4 border border-purple-500 rounded-full">${__vite_ssr_import_1__.ssrInterpolate(tag)}</button>`)
+  })
+  _push(`<!--]--></div></div></div>`)
 }
 
 
@@ -3804,12 +3902,12 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = __vite_ssr_import_2__.useSSRContext()
-  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Projects.vue")
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("components/Card.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Projects.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/home/antonio/projects/portfolio/components/Card.vue"]]);
 }
 
 
@@ -3880,7 +3978,8 @@ const __modules__ = {
   "/node_modules/@nuxt-hero-icons/outline/src/components/MoonIcon.vue": $id_f33367d2,
   "/components/Info.vue": $id_a2985181,
   "/components/About.vue": $id_298754c7,
-  "/components/Projects.vue": $id_9f498176
+  "/components/Projects.vue": $id_9f498176,
+  "/components/Card.vue": $id_243aaff2
 }
 
 

@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'About': typeof import("../components/About.vue")['default'],
+    'Card': typeof import("../components/Card.vue")['default'],
     'Info': typeof import("../components/Info.vue")['default'],
     'Navbar': typeof import("../components/Navbar.vue")['default'],
     'Projects': typeof import("../components/Projects.vue")['default'],
@@ -464,6 +465,7 @@ declare module 'vue' {
     'ServerPlaceholder': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyAbout': typeof import("../components/About.vue")['default'],
+    'LazyCard': typeof import("../components/Card.vue")['default'],
     'LazyInfo': typeof import("../components/Info.vue")['default'],
     'LazyNavbar': typeof import("../components/Navbar.vue")['default'],
     'LazyProjects': typeof import("../components/Projects.vue")['default'],
@@ -928,6 +930,7 @@ declare module 'vue' {
   }
 }
 export const About: typeof import("../components/About.vue")['default']
+export const Card: typeof import("../components/Card.vue")['default']
 export const Info: typeof import("../components/Info.vue")['default']
 export const Navbar: typeof import("../components/Navbar.vue")['default']
 export const Projects: typeof import("../components/Projects.vue")['default']
@@ -1390,6 +1393,7 @@ export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components
 export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyAbout: typeof import("../components/About.vue")['default']
+export const LazyCard: typeof import("../components/Card.vue")['default']
 export const LazyInfo: typeof import("../components/Info.vue")['default']
 export const LazyNavbar: typeof import("../components/Navbar.vue")['default']
 export const LazyProjects: typeof import("../components/Projects.vue")['default']
