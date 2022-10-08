@@ -2,7 +2,7 @@
 
 const page = ref(1);
 const lang = ref(0)
-const lightmode = ref(true)
+const lightmode = ref(false)
 
 const changeMode = () => {
   lightmode.value = !lightmode.value;
@@ -21,8 +21,8 @@ const switchLang = () => {
 
 <template>
   <div :class= " !lightmode ? 'dark' : '' " class="">
-    <div class="dark:bg-slate-800">
-      <div class=" max-w-7xl mx-auto h-screen px-10 ">
+    <div class=" dark:bg-slate-800 min-h-screen pb-10">
+      <div class=" max-w-7xl mx-auto px-10 ">
         <Navbar 
             @changeMode="changeMode" 
             @update="updatePage" 
