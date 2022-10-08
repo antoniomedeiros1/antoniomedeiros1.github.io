@@ -3821,7 +3821,26 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     }, null, _parent))
     _push(`</div>`)
   } else {
-    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "mx-4 my-5 lg:mr-64 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Projects🛠️</h1></div>`)
+    _push(`<div${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "mx-4 my-5 lg:mr-16 lg:ml-10 lg:my-10" }, _attrs))}><h1 class="text-xl text-gray-700 dark:text-gray-100 font-bold">Projects 🛠️</h1>`)
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Site GET EngComp (UFJF)",
+      descricao: "Site desenvolvido com React e Bootstrap para o Grupo de Educação Tutorial da Engenharia Computacional de Juiz de Fora.",
+      url: "https://getengcomp.netlify.app",
+      tags: ['React', 'Bootstrap']
+    }, null, _parent))
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Fiado Só Amanhã",
+      descricao: "Aplicação feita com Laravel com o propósito de oferecer aos pequenos negócios e comércios\n                 um sistema de gerenciamento de dívidas e dados dos clientes.",
+      url: "https://github.com/aryneto1/fiado-so-amanha",
+      tags: ['Laravel', 'PHP', 'MySQL', 'TailwindCSS', 'jQuery']
+    }, null, _parent))
+    _push(__vite_ssr_import_2__.ssrRenderComponent(_component_Card, {
+      title: "Semente",
+      descricao: "Aplicativo desenvolvido para o projeto Semente, que conta com um chatbot integrado (Dialogflow) com\n                  a proposta de ser um aplicativo sobre saúde mental e com orientações sobre onde buscar ajuda",
+      url: "https://github.com/antoniomedeiros1/semente_app",
+      tags: ['Flutter', 'Firebase', 'Dialogflow', 'Cloud Functions']
+    }, null, _parent))
+    _push(`</div>`)
   }
 }
 
@@ -3880,8 +3899,8 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   _push(`<div${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "my-4 rounded-lg border w-full border-gray-300" }, _attrs))
-  }><div class="p-4"><h1 class="text-lg text-gray-700 dark:text-gray-100 font-bold">${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "my-4 rounded-lg border w-full border-gray-300 dark:border-gray-600" }, _attrs))
+  }><div class="p-4"><h1 class="text-lg text-gray-600 dark:text-gray-100 font-bold">${
     __vite_ssr_import_1__.ssrInterpolate($props.title)
   }</h1><p class="py-2 text-gray-600 dark:text-gray-400">${
     __vite_ssr_import_1__.ssrInterpolate($props.descricao)
@@ -3889,7 +3908,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     __vite_ssr_import_1__.ssrRenderAttr("href", $props.url)
   } class="text-blue-500">${
     __vite_ssr_import_1__.ssrInterpolate($props.url)
-  }</a><div class="flex mt-2"><!--[-->`)
+  }</a><div class="flex flex-wrap mt-2"><!--[-->`)
   __vite_ssr_import_1__.ssrRenderList($props.tags, (tag) => {
     _push(`<button class="bg-transparent text-purple-500 mr-2 mt-1 py-1 px-4 border border-purple-500 rounded-full">${__vite_ssr_import_1__.ssrInterpolate(tag)}</button>`)
   })
