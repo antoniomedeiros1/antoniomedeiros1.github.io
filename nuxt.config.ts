@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    ssr: false,
     target: 'static',
     meta: {
         title: 'Antonio Dev',
@@ -13,7 +14,7 @@ export default defineNuxtConfig({
         '@nuxt-hero-icons/solid/nuxt',
     ],
     app: {
-        baseURL: '/antoniomed1/',
-        // buildAssetsDir: 'assets',
+        baseURL: '/portfolio/',
+        buildAssetsDir: 'assets',
       }
 })
