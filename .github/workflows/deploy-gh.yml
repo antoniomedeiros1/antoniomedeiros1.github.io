@@ -9,11 +9,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: yarn install
+
       - name: Build App
-        run: yarn run generate
+        run: yarn generate
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .output/public
+          publish_dir: ./dist
