@@ -12,4 +12,8 @@ export default defineNuxtConfig({
         '@nuxt-hero-icons/outline/nuxt',
         '@nuxt-hero-icons/solid/nuxt',
     ],
+    app: {
+        baseURL: '/antoniomed1/',
+        // buildAssetsDir: 'assets',
+      }
 })

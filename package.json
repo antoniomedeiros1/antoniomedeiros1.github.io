@@ -5,7 +5,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^2.0.0",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.6.4",
     "@nuxt-hero-icons/outline": "^1.0.1",
-    "@nuxt-hero-icons/solid": "^1.0.1"
+    "@nuxt-hero-icons/solid": "^1.0.1",
+    "gh-pages": "^6.1.1"
   }
 }
