@@ -35,22 +35,22 @@ const props = defineProps({
   </div>
   <div class=" flex justify-center items-center mx-4 ">
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/python.svg" alt="">
+      <img src="/python.svg" alt="">
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/linux.svg" alt="">
+      <img src="/linux.svg" alt="">
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/docker.svg" alt="">
+      <img src="/docker.svg" alt="">
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/k8s.svg">
+      <img src="/k8s.svg">
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/grafana.svg" alt="">
+      <img src="/grafana.svg" alt="">
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
-      <img src="/icons/prometheus.svg" alt="">
+      <img src="/prometheus.svg" alt="">
     </div>
   </div>
 </template>
