@@ -3,7 +3,7 @@
     <div class="pb-3 text-3xl md:text-4xl self-center font-bold text-gray-700 dark:text-gray-50">
       Antonio Medeiros
     </div>
-    <div class="pb-2 text-xl self-center text-gray-400">Developer/DevOps</div>
+    <div class="pb-2 text-xl self-center text-gray-400">DevOps Engineer</div>
     <div class="self-center flex items-center">
       <a href="https://www.github.com/antoniomedeiros1/" 
           class="w-5 h-5 mx-1 opacity-70 hover:opacity-100 dark:invert">

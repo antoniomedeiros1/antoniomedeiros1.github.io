@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         '@nuxt-hero-icons/solid/nuxt',
     ],
     app: {
-        baseURL: '/portfolio/',
+        baseURL: '/',
         buildAssetsDir: 'assets',
       }
 })

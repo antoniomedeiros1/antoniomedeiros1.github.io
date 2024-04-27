@@ -12,7 +12,7 @@ const props = defineProps({
     <Card 
       title="Site GET EngComp (UFJF)"
       descricao="Site desenvolvido com React e Bootstrap para o Grupo de Educação Tutorial da Engenharia Computacional de Juiz de Fora."
-      url="https://getengcomp.netlify.app"
+      url="https://github.com/antoniomedeiros1/siteGET"
       :tags="['React', 'Bootstrap']"
     />
     <Card 
@@ -34,21 +34,21 @@ const props = defineProps({
     <h1 class=" text-xl text-gray-700 dark:text-gray-100 font-bold">Projects 🛠️</h1>
     <Card 
       title="Site GET EngComp (UFJF)"
-      descricao="Site desenvolvido com React e Bootstrap para o Grupo de Educação Tutorial da Engenharia Computacional de Juiz de Fora."
-      url="https://getengcomp.netlify.app"
+      descricao="Website developed with React and Bootstrap for the Tutorial Education Group of Computational Engineering of Juiz de Fora."
+      url="https://github.com/antoniomedeiros1/siteGET"
       :tags="['React', 'Bootstrap']"
     />
     <Card 
       title="Fiado Só Amanhã"
-      descricao="Aplicação feita com Laravel com o propósito de oferecer aos pequenos negócios e comércios
-                 um sistema de gerenciamento de dívidas e dados dos clientes."
+      descricao="Application made with Laravel with the purpose of offering small businesses and shops
+                 a system for managing debts and customer data."
       url="https://github.com/aryneto1/fiado-so-amanha"
       :tags="['Laravel', 'PHP', 'MySQL', 'TailwindCSS', 'jQuery']"
     />
     <Card 
       title="Semente"
-      descricao="Aplicativo desenvolvido para o projeto Semente, que conta com um chatbot integrado (Dialogflow) com
-                  a proposta de ser um aplicativo sobre saúde mental e com orientações sobre onde buscar ajuda"
+      descricao="Application developed for the Semente project, which has an integrated chatbot (Dialogflow) with
+                  the proposal to be an application about mental health and with guidance on where to seek help."
       url="https://github.com/antoniomedeiros1/semente_app"
       :tags="['Flutter', 'Firebase', 'Dialogflow', 'Cloud Functions']"
     />
