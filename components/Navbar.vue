@@ -53,6 +53,11 @@ const props = defineProps({
 						@click="this.$emit('update', '3')">
 						Projetos
 				</li>
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 4 ? 'border-b border-dotted border-gray-400' : ''"
+						@click="this.$emit('update', '4')">
+						Artigos
+				</li>
 			</ul>
 		</div>
 	</nav>
@@ -99,6 +104,11 @@ const props = defineProps({
 						:class="active === 3 ? 'border-b border-dotted border-gray-400' : ''"
 						@click="this.$emit('update', '3')">
 						Projects
+				</li>
+				<li class=" mx-2 hover:cursor-pointer hover:text-gray-800 dark:hover:text-white" 
+						:class="active === 4 ? 'border-b border-dotted border-gray-400' : ''"
+						@click="this.$emit('update', '4')">
+						Articles
 				</li>
 			</ul>
 		</div>

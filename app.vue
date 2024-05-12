@@ -34,6 +34,7 @@ const switchLang = () => {
         <Info v-if="page === 1" />
         <About v-if="page === 2" :lang="lang"/>
         <Projects v-if="page === 3" :lang="lang" />
+        <Articles v-if="page === 4" :lang="lang" />
       </div>
     </div>
   </div>
