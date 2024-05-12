@@ -13,11 +13,11 @@ const props = defineProps({
     <p class=" py-2 text-gray-600 dark:text-gray-400">
       Possuo experiência na aplicação da cultura DevOps em todo o 
       ciclo de desenvolvimento de software, trabalhando com a stack Github Actions, 
-      Docker, Kubernetes (AKS), Prometheus e Grafana. Também possuo experiência em desenvolvimento web.
+      Docker, Kubernetes (AKS), Prometheus e Grafana. Também possuo experiência com ferramentas de IaC como Terraform e Ansible, e desenvolvimento web com Django.
     </p>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
       Atualmente cursando Engenharia Computacional na Universidade Federal de Juiz de 
-      Fora, com grande interesse em temas como Computação de Alto Desempenho (HPC) e Machine Learning.
+      Fora, com grande interesse em temas como Computação de Alto Desempenho (HPC), Cloud e Machine Learning.
     </p>
   </div>
 
@@ -51,6 +51,12 @@ const props = defineProps({
     </div>
     <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
       <img src="/prometheus.svg" alt="">
+    </div>
+    <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
+      <img src="/terraform.svg" alt="">
+    </div>
+    <div class="w-10 h-10 mx-2 opacity-60 dark:invert">
+      <img src="/ansible.svg" alt="">
     </div>
   </div>
 </template>
