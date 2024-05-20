@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
   <!-- PT -->
-	<nav v-if="lang === 0" class="flex flex-row justify-between py-3 border-b">
+	<nav v-if="lang === 0" class="flex flex-row justify-between py-3 border-b dark:border-gray-600">
 		<div class="flex items-center">
 			<div class="flex p-2 mx-2
 									text-gray-400 hover:text-gray-800 
@@ -62,7 +62,7 @@ const props = defineProps({
 		</div>
 	</nav>
   <!-- EN -->
-	<nav v-else class="flex flex-row justify-between py-3 border-b">
+	<nav v-else class="flex flex-row justify-between py-3 border-b dark:border-gray-600">
 		<div class="flex items-center">
 			<div class="flex p-2 mx-2
 									text-gray-400 hover:text-gray-800 

@@ -5,8 +5,10 @@ export default defineNuxtConfig({
     ssr: false,
     target: 'static',
     meta: {
-        title: 'Antonio Dev',
+        title: 'Antonio Medeiros',
+        description: 'Antonio Medeiros portfolio',
     },
+    
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxtjs/google-fonts',
@@ -16,5 +18,8 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/',
         buildAssetsDir: 'assets',
+        head: {
+            link: [{ rel: 'icon', type: 'image/ico', href: '/favicon.ico' }]
+        }
       }
 })
