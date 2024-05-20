@@ -2,7 +2,7 @@
 
 const page = ref(1);
 const lang = ref(0)
-const lightmode = ref(false)
+const lightmode = ref(true)
 
 const changeMode = () => {
   lightmode.value = !lightmode.value;

@@ -21,8 +21,8 @@ const fetch_repo_info = (repo_url) => {
 
 <template>
   <div class=" mx-4 my-5 lg:mr-16 lg:ml-10 lg:my-10">
-    <h1 v-if="lang === 0" class=" text-xl text-gray-700 dark:text-gray-100 font-bold">Projetos 🛠️</h1>
-    <h1 v-else class=" text-xl text-gray-700 dark:text-gray-100 font-bold">Projects 🛠️</h1>
+    <h1 v-if="lang === 0" class=" text-2xl text-gray-700 dark:text-gray-100 font-bold">Projetos 🛠️</h1>
+    <h1 v-else class=" text-2xl text-gray-700 dark:text-gray-100 font-bold">Projects 🛠️</h1>
     <Card 
     title="Libras SLT"
     descricao="Trabalho efetuado para a disciplina 'Trabalho Multidisciplinar', com o objetivo de criar um aplicativo que auxilie
