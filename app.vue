@@ -17,6 +17,45 @@ const switchLang = () => {
   console.log(lang.value);
 }
 
+
+const fetch_repo_info = async (repo_url) => {
+  const repo_url_split = repo_url.split('github.com/')[1]
+  const url = `https://api.github.com/repos/${repo_url_split}`
+  const response = await fetch(url)
+    .then(response => response.json())
+    .then(data => data)
+  
+  console.log({
+    name: response.name,
+    description: response.description,
+    html_url: response.html_url,
+    topics: response.topics
+  })
+  return {
+    name: response.name,
+    description: response.description,
+    html_url: response.html_url,
+    topics: response.topics
+  }
+}
+
+const repo_urls = [
+  "https://github.com/antoniomedeiros1/libras-realtime-detector",
+  "https://github.com/antoniomedeiros1/mdf-onda-acustica",
+  "https://github.com/antoniomedeiros1/semente_app",
+  "https://github.com/antoniomedeiros1/ambot_app",
+  "https://github.com/antoniomedeiros1/siteGET"
+]
+
+const repo_data = ref([])
+
+onMounted(async () => {
+  for (let i = 0; i < repo_urls.length; i++) {
+    const repo_info = await fetch_repo_info(repo_urls[i])
+    repo_data.value.push(repo_info)
+  }
+})
+
 </script>
 
 <template>
@@ -33,7 +72,7 @@ const switchLang = () => {
           />
         <Info v-if="page === 1" />
         <About v-if="page === 2" :lang="lang"/>
-        <Projects v-if="page === 3" :lang="lang" />
+        <Projects v-if="page === 3" :lang="lang" :repo_data="repo_data" />
         <Articles v-if="page === 4" :lang="lang" />
       </div>
     </div>

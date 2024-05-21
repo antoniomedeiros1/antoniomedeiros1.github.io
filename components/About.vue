@@ -18,11 +18,11 @@ const props = defineProps({
       Possuo experiência em <strong>conteinerização de aplicações</strong> com <em>Docker</em>, <strong>orquestração de containers</strong> com <em>Kubernetes</em> e configuração de manifestos e charts <em>Helm</em>, desenvolvimento de <strong>pipelines de CI/CD</strong> para aplicações Java, .Net, Node e Python, utilizando <em>Github Actions</em> junto de ferramentas de <strong>análise de qualidade de código</strong> e <strong>SAST</strong>.
     </p>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
-      Também possuo experiência com <strong>monitoramento</strong> utilizando <em>Prometheus</em> e <em>Grafana</em> e ferramentas de <strong>Infraestrutura como Código (IaC)</strong> como <em>Terraform</em> e <em>Ansible</em>. Já trabalhei com os principais provedores de nuvem (<em>AWS</em>, <em>GCP</em> e <em>Azure</em>).
+      Também possuo experiência com <strong>monitoramento</strong> utilizando <em>Prometheus</em> e <em>Grafana</em> e ferramentas de <strong>Infraestrutura como Código (IaC)</strong> como <em>Terraform</em> e <em>Ansible</em>. Já trabalhei com os principais provedores de nuvem (<em>AWS</em>, <em>GCP</em> e <em>Azure</em>) e tenho conhecimentos básicos em <strong>redes</strong> e <strong>sistemas Linux</strong>.
     </p>
     <h2 class=" pt-2 text-xl text-gray-700 dark:text-gray-100 font-bold">Desenvolvimento de Software</h2>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
-      Apesar de atualmente trabalhar com DevOps, também tenho um background em desenvolvimento web e mobile, com ênfase em tecnologias como <em>Vue</em>, <em>Django</em>, <em>Postgres</em> e <em>Flutter</em>. Também já trabalhei com desenvolvimento de chatbots utilizando <em>Dialogflow</em>.
+      Apesar de atualmente trabalhar com DevOps, também tenho um background em <strong>desenvolvimento web e mobile</strong>, com ênfase em tecnologias como <em>Vue</em>, <em>Django</em>, <em>Postgres</em> e <em>Flutter</em>. Também já trabalhei com desenvolvimento de <strong>chatbots</strong> utilizando <em>Dialogflow</em>.
     </p>
     <h2 class=" pt-2 text-xl text-gray-700 dark:text-gray-100 font-bold">Formação</h2>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
@@ -41,11 +41,11 @@ const props = defineProps({
       I have experience in <strong>containerization of applications</strong> with <em>Docker</em>, <strong>container orchestration</strong> with <em>Kubernetes</em> and configuration of manifests and <em>Helm</em> charts, development of <strong>CI/CD pipelines</strong> for Java, .Net, Node and Python applications, using <em>Github Actions</em> along with <strong>code quality analysis</strong> and <strong>SAST</strong> tools.
     </p>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
-      I also have experience with <strong>monitoring</strong> using <em>Prometheus</em> and <em>Grafana</em> and <strong>Infrastructure as Code (IaC)</strong> tools such as <em>Terraform</em> and <em>Ansible</em>. I have worked with the main cloud providers (<em>AWS</em>, <em>GCP</em> and <em>Azure</em>).
+      I also have experience with <strong>monitoring</strong> using <em>Prometheus</em> and <em>Grafana</em> and <strong>Infrastructure as Code (IaC)</strong> tools such as <em>Terraform</em> and <em>Ansible</em>. I have worked with the main cloud providers (<em>AWS</em>, <em>GCP</em> and <em>Azure</em>) and have basic knowledge in <strong>networks</strong> and <strong>Linux systems</strong>.
     </p>
     <h2 class=" pt-2 text-xl text-gray-700 dark:text-gray-100 font-bold">Software Development</h2>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
-      Although I currently work with DevOps, I also have a background in web and mobile development, with emphasis on technologies such as <em>Vue</em>, <em>Django</em>, <em>Postgres</em> and <em>Flutter</em>. I have also worked with chatbot development using <em>Dialogflow</em>.
+      Although I currently work with DevOps, I also have a background in <strong>web and mobile development</strong>, with emphasis on technologies such as <em>Vue</em>, <em>Django</em>, <em>Postgres</em> and <em>Flutter</em>. I have also worked with <strong>chatbot development</strong> using <em>Dialogflow</em>.
     </p>
     <h2 class=" pt-2 text-xl text-gray-700 dark:text-gray-100 font-bold">Education</h2>
     <p class=" py-2 text-gray-600 dark:text-gray-400">
