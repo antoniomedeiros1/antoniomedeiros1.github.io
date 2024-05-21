@@ -41,6 +41,7 @@ const repo_urls = [
   "https://github.com/antoniomedeiros1/libras-realtime-detector",
   "https://github.com/antoniomedeiros1/mdf-onda-acustica",
   "https://github.com/antoniomedeiros1/forensics",
+  "https://github.com/antoniomedeiros1/hackaton-sbseg",
   "https://github.com/antoniomedeiros1/antoniomedeiros1.github.io",
   "https://github.com/antoniomedeiros1/semente_app",
   "https://github.com/antoniomedeiros1/ambot_app",
