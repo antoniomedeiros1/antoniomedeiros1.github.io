@@ -21,16 +21,13 @@ const switchLang = () => {
 const fetch_repo_info = async (repo_url) => {
   const repo_url_split = repo_url.split('github.com/')[1]
   const url = `https://api.github.com/repos/${repo_url_split}`
-  const response = await fetch(url)
+  const headers = {
+    'User-Agent': 'antoniomedeiros1',
+    'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`
+  }
+  const response = await fetch(url, { headers })
     .then(response => response.json())
     .then(data => data)
-  
-  console.log({
-    name: response.name,
-    description: response.description,
-    html_url: response.html_url,
-    topics: response.topics
-  })
   return {
     name: response.name,
     description: response.description,
@@ -40,19 +37,30 @@ const fetch_repo_info = async (repo_url) => {
 }
 
 const repo_urls = [
+  "https://github.com/antoniomedeiros1/hpc-at-cloud",
   "https://github.com/antoniomedeiros1/libras-realtime-detector",
   "https://github.com/antoniomedeiros1/mdf-onda-acustica",
+  "https://github.com/antoniomedeiros1/forensics",
+  "https://github.com/antoniomedeiros1/antoniomedeiros1.github.io",
   "https://github.com/antoniomedeiros1/semente_app",
   "https://github.com/antoniomedeiros1/ambot_app",
-  "https://github.com/antoniomedeiros1/siteGET"
+  "https://github.com/antoniomedeiros1/siteGET",
+  "https://github.com/antoniomedeiros1/Crazy-Ship",
+  "https://github.com/antoniomedeiros1/2048",
 ]
 
-const repo_data = ref([])
+const repoData = ref([])
+const allTags = ref({})
 
 onMounted(async () => {
   for (let i = 0; i < repo_urls.length; i++) {
     const repo_info = await fetch_repo_info(repo_urls[i])
-    repo_data.value.push(repo_info)
+    repoData.value.push(repo_info)
+    repo_info.topics.forEach(tag => {
+      if (!allTags.value[tag]) {
+        allTags.value[tag] = false
+      }
+    })
   }
 })
 
@@ -71,8 +79,8 @@ onMounted(async () => {
             :active="page"
           />
         <Info v-if="page === 1" />
-        <About v-if="page === 2" :lang="lang"/>
-        <Projects v-if="page === 3" :lang="lang" :repo_data="repo_data" />
+        <About v-if="page === 2" :lang="lang "/>
+        <Projects v-if="page === 3" :lang="lang" :repoData="repoData" :allTags="allTags" />
         <Articles v-if="page === 4" :lang="lang" />
       </div>
     </div>
