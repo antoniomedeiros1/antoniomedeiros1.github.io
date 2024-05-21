@@ -25,7 +25,7 @@ const fetch_repo_info = async (repo_url) => {
     'User-Agent': 'antoniomedeiros1',
     'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`
   }
-  const response = await fetch(url, { headers })
+  const response = await fetch(url)
     .then(response => response.json())
     .then(data => data)
   return {
