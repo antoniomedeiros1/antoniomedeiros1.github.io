@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Setup node env
         uses: actions/setup-node@v2.1.2
         with:
           node-version: '18'
-      
+
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Build App
-        run: yarn generate
+        run: npm run generate
 
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3
