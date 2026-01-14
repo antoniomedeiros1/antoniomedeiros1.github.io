@@ -36,12 +36,11 @@ const fetch_repo_info = async (repo_url) => {
 
 const repo_urls = [
   "https://github.com/antoniomedeiros1/antoniomedeiros1.github.io",
+  "https://github.com/antoniomedeiros1/libras-translator-web",
   "https://github.com/antoniomedeiros1/libras-realtime-detector",
   "https://github.com/antoniomedeiros1/nestjs-todo-list-api",
   "https://github.com/antoniomedeiros1/ouvimais-api",
   "https://github.com/antoniomedeiros1/acwv-solver",
-  "https://github.com/antoniomedeiros1/Crazy-Ship",
-  "https://github.com/antoniomedeiros1/2048",
 ];
 
 const repoData = ref([]);
